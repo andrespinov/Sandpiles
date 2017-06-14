@@ -17,23 +17,23 @@ public class Render extends DefaultTableCellRenderer {
             switch (Integer.parseInt((String)entrada) % 4) {
                 case 0:
                     celda.setBackground(Color.BLUE);
-                    //celda.setForeground(Color.BLUE);
+                    celda.setForeground(Color.BLUE);
                     break;
                 case 1:
                     celda.setBackground(Color.GREEN);
-                    //celda.setForeground(Color.GREEN);
+                    celda.setForeground(Color.GREEN);
                     break;
                 case 2:
                     celda.setBackground(Color.RED);
-                    //celda.setForeground(Color.RED);
+                    celda.setForeground(Color.RED);
                     break;
                 case 3:
                     celda.setBackground(Color.YELLOW);
-                    //celda.setForeground(Color.YELLOW);
+                    celda.setForeground(Color.YELLOW);
                     break;
                 default:
                     celda.setBackground(Color.BLACK);
-                    //celda.setForeground(Color.BLACK);
+                    celda.setForeground(Color.BLACK);
                     break;
             }
         }

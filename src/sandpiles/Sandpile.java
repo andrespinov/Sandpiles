@@ -11,7 +11,7 @@ public class Sandpile extends javax.swing.JFrame {
     public Sandpile() {
         initComponents();
 
-        int size = 30;
+        int size = 60;
         String[][] entradas = new String[size][size];
         String[] nombres = new String[size];
         for (int i = 0; i < size; i++) {
@@ -21,7 +21,7 @@ public class Sandpile extends javax.swing.JFrame {
             nombres[i] = "0";
         }
         sandpile = new JTable(entradas, nombres);
-        sandpile.setSize(600, 600);
+        sandpile.setSize(900, 900);
         sandpile.setDefaultRenderer(Object.class, new Render());
         this.add(sandpile);
 
