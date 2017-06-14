@@ -10,11 +10,11 @@ public class Render extends DefaultTableCellRenderer {
 
     public Component getTableCellRendererComponent(JTable tabla, Object entrada, boolean isSelected, boolean hasFocus, int i, int j) {
         JLabel celda = (JLabel) super.getTableCellRendererComponent(tabla, entrada, isSelected, hasFocus, i, j);
-        if (Integer.parseInt((String)entrada) < 0) {
+        if (Integer.parseInt((String) entrada) < 0) {
             celda.setBackground(Color.BLACK);
             celda.setForeground(Color.BLACK);
         } else {
-            switch (Integer.parseInt((String)entrada) % 4) {
+            switch (Integer.parseInt((String) entrada)) {
                 case 0:
                     celda.setBackground(Color.BLUE);
                     celda.setForeground(Color.BLUE);
@@ -24,12 +24,12 @@ public class Render extends DefaultTableCellRenderer {
                     celda.setForeground(Color.GREEN);
                     break;
                 case 2:
-                    celda.setBackground(Color.RED);
-                    celda.setForeground(Color.RED);
-                    break;
-                case 3:
                     celda.setBackground(Color.YELLOW);
                     celda.setForeground(Color.YELLOW);
+                    break;
+                case 3:
+                    celda.setBackground(Color.RED);
+                    celda.setForeground(Color.RED);
                     break;
                 default:
                     celda.setBackground(Color.BLACK);
@@ -38,12 +38,5 @@ public class Render extends DefaultTableCellRenderer {
             }
         }
         return celda;
-    }
-}
-
-class ex {
-
-    public static void main(String[] s) {
-        String[][] a = new String[50][50];
     }
 }
